@@ -1,0 +1,6 @@
+venv
+dump.rdb
+*.pyc
+instagram/
+static/
+*.png

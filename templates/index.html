@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Page 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/datepicker.js"></script>
+</head>
+<body>
+    <div class="m-10">
+        <div class="mx-52 flex justify-end">
+            <a href=""><i class="fa-solid fa-right-from-bracket text-[#725dfd] text-lg"></i> <span class="text-[#725dfd] text-lg pl-1">Keluar</span> </a> 
+        </div>
+        <div class="mx-96">
+            <div class="text-center pt-10">
+                <h1 class="font-bold text-4xl mt-1">Temukan Topik Konten <br> Lewat Feeds Instagram!</h1>
+                <h1 class="mt-3 text-[#bdbdbd]">Cukup dengan memasukkan username instagram, <br> kamu bisa mendapatkan hasil analisis topik konten di tiap feedsnya.</h1>
+            </div>
+            <form method="POST">
+            <div class="mt-20">
+                <label for="instagram"><span class="font-semibold text-md">Akun instagram </span> <br> <span class="text-[#7d7d7d] text-sm">Username akun instagram untuk analisis konten.</span>
+                    <input type="text" placeholder="Masukkan tanpa menggunakan '@'" class="placeholder-[#cdc6ff] mt-3 px-5 py-2 shadow rounded w-full block text-sm bg-[#e9e5ff]" required name="instagram", name="instagram">
+                </label>
+            </div>
+            <div class="mt-9">
+                <label for="periode"><span class="font-semibold text-md">Periode Pencarian </span> <br> <span class="text-[#7d7d7d] text-sm">Tentukan rentang tanggal yang kamu inginkan.</span>
+                    <div class="flex">
+                        <div class="flex-auto w-[50%] mr-10">
+                            <div class="relative mt-3">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                    <svg aria-hidden="true" class="w-5 h-5 text-[#725dfd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <input datepicker datepicker-autohide type="text" class="placeholder-[#cdc6ff] bg-[#e9e5ff] text-sm shadow rounded block w-full pl-10 p-2.5" placeholder="Dari tanggal" name="dari" required>
+                            </div>
+                        </div>
+                        <div class="flex-auto w-[50%]">
+                            <div class="relative mt-3">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                    <svg aria-hidden="true" class="w-5 h-5 text-[#725dfd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <input datepicker datepicker-autohide type="text" class="placeholder-[#cdc6ff] bg-[#e9e5ff] text-sm shadow rounded block w-full pl-10 p-2.5" placeholder="Hingga tanggal" name="hingga" required>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="mt-14 text-sm font-semibold bg-[#725dfd] text-white rounded-3xl px-14 py-3 block hover:text-[#725DFD] hover:bg-white hover:border-2 hover:border-[#725DFD]">
+                PROSES PENCARIAN TOPIK
+            </button>
+        </div>
+        </form>
+    </div> 
+</body>
+</html>
